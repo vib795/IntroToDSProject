@@ -1,6 +1,6 @@
 # IntroToDSProject
 
-. Then run: git config --global user.name "<Your name>"
+. Then run: git config --global user.name "<Your name>"<br/>
 . Then run: git config --global user.email "<Your e-mail address>"
 . Create a directory and run: git init
 . To fetch the git repository to a directory on your local system run: git@github.com:vib795/IntroToDSProject.git
