@@ -32,14 +32,14 @@ df_PC_WKGPOP = df2_USA[['TIME','Value','SUBJECT','MEASURE']][df2_USA['TIME'].isi
 df_PC_WKGPOP = df2_part1[['TIME','Value','SUBJECT','MEASURE']][df2_part1['MEASURE'].isin(['PC_WKGPOP'])]
 df_PC_WKGPOP_rate_and_years_USA = df2_part2[['TIME','Value']][df2_part2["SUBJECT"].isin(['TOT'])]
 
-plt.plot(df_rate_and_years_USA['TIME'],df_rate_and_years_USA['Value'],'b.-')
-plt.xticks(df_rate_and_years_USA['TIME'],df_rate_and_years_USA['TIME'],rotation=45,fontsize=7)
-plt.yticks(fontsize=8)
-plt.title("Unemployment pattern sice 1980")
-plt.xlabel("YEARS")
-plt.ylabel("UNEMPLOYMENT  RATES")
-plt.legend(['Unemployment Rate'],loc='lower left')
-plt.show()
+#plt.plot(df_rate_and_years_USA['TIME'],df_rate_and_years_USA['Value'],'b.-')
+#plt.xticks(df_rate_and_years_USA['TIME'],df_rate_and_years_USA['TIME'],rotation=45,fontsize=7)
+#plt.yticks(fontsize=8)
+#plt.title("Unemployment pattern sice 1980")
+#plt.xlabel("YEARS")
+#plt.ylabel("UNEMPLOYMENT  RATES")
+#plt.legend(['Unemployment Rate'],loc='lower left')
+#plt.show()
 
 #########################################################################################################
 #EMPLOYMENT AGAINST GDP
@@ -66,12 +66,12 @@ df_USA_MLN_USD = df_USA[['TIME','Value','SUBJECT','MEASURE']][df_USA['MEASURE'].
 #plt.ylabel("GDP")
 #plt.legend(['GDP'],loc='lower right')
 
-#plt.plot(df_USA_MLN_USD['TIME'],df_USA_MLN_USD['Value'],'b.-')
-#plt.xticks(df_USA_MLN_USD['TIME'],df_USA_MLN_USD['TIME'],rotation=45,fontsize=7)
-#plt.yticks(fontsize=8)
-#plt.title("Employment and GDP pattern sice 1980")
-#plt.xlabel("YEARS")
-#plt.ylabel("EMPLOYMENT RATES AND GDP")
-#plt.legend(['GDP'],loc='lower right')
-#plt.show()
+plt.plot(df_USA_MLN_USD['TIME'],df_USA_MLN_USD['Value'],'b.-')
+plt.xticks(df_USA_MLN_USD['TIME'],df_USA_MLN_USD['TIME'],rotation=45,fontsize=7)
+plt.yticks(fontsize=8)
+plt.title("Employment and GDP pattern sice 1980")
+plt.xlabel("YEARS")
+plt.ylabel("EMPLOYMENT RATES AND GDP")
+plt.legend(['GDP'],loc='lower right')
+plt.show()
 #########################################################################################################
